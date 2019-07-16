@@ -1,0 +1,15 @@
+server:
+  port: 80
+
+# 开启服务器降级
+feign:
+  hystrix:
+    enabled: true
+# 配置当前服务为客户端
+eureka: 
+  client:
+    register-with-eureka: false
+    service-url: 
+      #服务消费者要连接到的注册中心，集群的三台机器
+      defaultZone: http://local-rureka9000:9000/eureka,http://local-rureka9001:9001/eureka,http://local-rureka9002:9002/eureka
+  
