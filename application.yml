@@ -1,18 +1,18 @@
 spring：
-	profiles: dev	#开发环境
-	application:
-	 name: springcloud-provider-dev
+ profiles: dev	#开发环境
+ application:
+  name: springcloud-provider-dev
 
 ---
 
 spring：
-	profiles: test	#测试环境
-	application:
-	 name: springcloud-provider-test
+ profiles: test	#测试环境
+ application:
+  name: springcloud-provider-test
 
 ---
 
 spring：
-	profiles: pro 	#生产环境
-	application:
- 	 name: springcloud-provider-pro
+ profiles: pro 	#生产环境
+ application:
+  name: springcloud-provider-pro
